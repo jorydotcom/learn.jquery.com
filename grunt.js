@@ -37,8 +37,9 @@ grunt.initConfig({
 		all: grunt.file.expandFiles( "resources/**/*" )
 	},
 	wordpress: grunt.utils._.extend({
-		dir: "dist/wordpress"
-        }, grunt.file.readJSON( "config.json" ) )
+		dir: "dist/wordpress",
+		order: "order.yml"
+	}, grunt.file.readJSON( "config.json" ) )
 });
 
 grunt.registerTask( "default", "wordpress-deploy" );
