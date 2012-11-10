@@ -154,7 +154,8 @@ $("form").on( "submit", function(event) {
 
   event.preventDefault(); // Prevent the form"s default submission.
 
-  event.stopPropagation(); // Prevent event from bubbling up DOM tree, prohibiting delegation
+  event.stopPropagation(); // Prevent event from bubbling up DOM tree,
+                           // prohibiting delegation
 
   // Make an AJAX request to submit the form data
 
